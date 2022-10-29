@@ -15,6 +15,10 @@ class Page2ViewController: UIViewController {
         viewModel.view = self
         viewModel.notifyViewDidLoad()
     }
+    
+    deinit {
+        print("I'm Page2ViewController, and I'm dead!")
+    }
 }
 
 // MARK: Interface

@@ -15,6 +15,10 @@ class Page3ViewController: UIViewController {
         viewModel.view = self
         viewModel.notifyViewDidLoad()
     }
+    
+    deinit {
+        print("I'm Page3ViewController, and I'm dead!")
+    }
 }
 
 // MARK: Interface

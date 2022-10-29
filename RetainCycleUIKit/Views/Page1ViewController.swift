@@ -15,6 +15,10 @@ class Page1ViewController: UIViewController {
         viewModel.view = self
         viewModel.notifyViewDidLoad()
     }
+    
+    deinit {
+        print("I'm Page1ViewController, and I'm dead!")
+    }
 }
 
 // MARK: - Interface

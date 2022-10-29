@@ -15,6 +15,10 @@ class RootViewController: UIViewController {
         viewModel.view = self
         viewModel.notifyViewDidLoad()
     }
+    
+    deinit {
+        print("I'm RootViewController, and I'm dead!")
+    }
 }
 
 // MARK: Interface 
