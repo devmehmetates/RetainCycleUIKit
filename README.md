@@ -1,6 +1,8 @@
 # Retain Cycle UIKit
 
-This project is a project that contains a few very simple navigation operations. But it does this by processing the retain cycle. The medium article, in which I discussed the project and the subject in detail, will be published soon.
+This project is project that contains a few very simple navigation operations. But it does this by processing the retain cycle. The medium article, in which I discussed the project and the subject in detail is live now.
+
+Check it out right here 👉🏻 <a href="https://medium.com/@dev.mehmetates/retain-cycle-in-swift-7f38f05f9dd0"> Medium </a>
 
 ## Demo
 
