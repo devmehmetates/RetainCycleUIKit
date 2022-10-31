@@ -8,8 +8,11 @@
 import UIKit
 
 extension UIViewController {
-    func navigateNextPage(withId id: String) {
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: id) else { return }
+    func navigateNextPage(withId id: String, viewModel: CommonViewModel? = nil) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: id) as? BaseViewControllerWithExtendViewModel else { return }
+        if let viewModel {
+            vc.setViewModel(viewModel: viewModel)
+        }
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

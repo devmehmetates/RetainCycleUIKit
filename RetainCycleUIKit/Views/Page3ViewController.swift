@@ -8,7 +8,7 @@
 import UIKit
 
 class Page3ViewController: UIViewController {
-    var viewModel: CommonViewModel = CommonViewModel()
+    private var viewModel: CommonViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,11 @@ class Page3ViewController: UIViewController {
 }
 
 // MARK: Interface
-extension Page3ViewController: BaseViewController {
+extension Page3ViewController: BaseViewControllerWithExtendViewModel {
+    func setViewModel(viewModel: CommonViewModel) {
+        self.viewModel = viewModel
+    }
+    
     func setNavigationTitle(_ title: String) {
         self.title = title
     }
