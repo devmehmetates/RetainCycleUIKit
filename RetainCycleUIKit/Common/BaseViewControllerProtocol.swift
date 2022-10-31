@@ -10,3 +10,7 @@ import UIKit
 protocol BaseViewController: UIViewController {
     func setNavigationTitle(_ title: String) -> Void
 }
+
+protocol BaseViewControllerWithExtendViewModel: BaseViewController {
+    func setViewModel(viewModel: CommonViewModel) -> Void
+}

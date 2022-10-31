@@ -22,7 +22,11 @@ class Page3ViewController: UIViewController {
 }
 
 // MARK: Interface
-extension Page3ViewController: BaseViewController {
+extension Page3ViewController: BaseViewControllerWithExtendViewModel {
+    func setViewModel(viewModel: CommonViewModel) {
+        self.viewModel = viewModel
+    }
+    
     func setNavigationTitle(_ title: String) {
         self.title = title
     }

@@ -8,7 +8,7 @@
 import UIKit
 
 class Page2ViewController: UIViewController {
-    private var viewModel: CommonViewModel = CommonViewModel()
+    private var viewModel: CommonViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,11 @@ class Page2ViewController: UIViewController {
 }
 
 // MARK: Interface
-extension Page2ViewController: BaseViewController {
+extension Page2ViewController: BaseViewControllerWithExtendViewModel {
+    func setViewModel(viewModel: CommonViewModel) {
+        self.viewModel = viewModel
+    }
+    
     func setNavigationTitle(_ title: String) {
         self.title = title
     }
@@ -31,7 +35,7 @@ extension Page2ViewController: BaseViewController {
 // MARK: - Actions
 extension Page2ViewController {
     @IBAction private func nextButtonTapped() {
-        navigateNextPage(withId: "Page3VC")
+        navigateNextPage(withId: "Page3VC", viewModel: viewModel)
     }
 }
 
