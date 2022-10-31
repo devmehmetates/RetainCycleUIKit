@@ -31,6 +31,6 @@ extension RootViewController: BaseViewController {
 // MARK: - Actions
 extension RootViewController {
     @IBAction private func nextButtonTapped() {
-        navigateNextPage(withId: "Page1VC")
+        navigateNextPage(withId: "Page1VC", viewModel: viewModel)
     }
 }

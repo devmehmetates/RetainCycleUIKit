@@ -8,7 +8,7 @@
 import UIKit
 
 class Page1ViewController: UIViewController {
-    private var viewModel: CommonViewModel = CommonViewModel()
+    private var viewModel: CommonViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
